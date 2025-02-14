@@ -1,0 +1,57 @@
+body {
+	margin: 0;
+}
+
+button {
+	cursor: pointer;
+}
+
+* {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 16px;
+	font-weight: 400;
+	margin: 2px;
+}
+
+a {
+	cursor: pointer;
+}
+
+a:hover {
+	color: #3273dc;
+}
+
+.app-loader {
+	margin: 300px auto 0;
+	border: 16px solid #f3f3f3;
+	border-top: 16px solid #3498db;
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.d-flex{
+	display: flex;
+}
+
+.spinner {
+	background-image: url('https://icon-library.com/images/spinner-icon-gif/spinner-icon-gif-24.jpg');
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	position: relative;
+	padding-left: 5px;
+}

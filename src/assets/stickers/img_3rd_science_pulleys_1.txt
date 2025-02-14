@@ -1,0 +1,364 @@
+<svg
+  id="Layer_1"
+  data-name="Layer 1"
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 360 360"
+>
+  <defs>
+    <style>
+		.pulley-cls-1,
+.pulley-cls-10,
+.pulley-cls-11,
+.pulley-cls-17,
+.pulley-cls-5 {
+  fill: #fff;
+}
+.pulley-cls-2 {
+  fill: #fb6300;
+}
+.pulley-cls-3,
+.pulley-cls-8 {
+  fill: gray;
+  stroke: gray;
+}
+.pulley-cls-11,
+.pulley-cls-12,
+.pulley-cls-16,
+.pulley-cls-17,
+.pulley-cls-18,
+.pulley-cls-3,
+.pulley-cls-5,
+.pulley-cls-6,
+.pulley-cls-7,
+.pulley-cls-8 {
+  stroke-linecap: round;
+}
+.pulley-cls-11,
+.pulley-cls-16,
+.pulley-cls-17,
+.pulley-cls-18,
+.pulley-cls-3,
+.pulley-cls-5,
+.pulley-cls-8 {
+  stroke-linejoin: bevel;
+}
+.pulley-cls-3,
+.pulley-cls-5 {
+  stroke-width: 3.55px;
+}
+.pulley-cls-12,
+.pulley-cls-14,
+.pulley-cls-15,
+.pulley-cls-19,
+.pulley-cls-20,
+.pulley-cls-21,
+.pulley-cls-22,
+.pulley-cls-4,
+.pulley-cls-6,
+.pulley-cls-7,
+.pulley-cls-9 {
+  fill: none;
+}
+.pulley-cls-10,
+.pulley-cls-11,
+.pulley-cls-12,
+.pulley-cls-13,
+.pulley-cls-17,
+.pulley-cls-20,
+.pulley-cls-21,
+.pulley-cls-4,
+.pulley-cls-5,
+.pulley-cls-6 {
+  stroke: #fff;
+}
+.pulley-cls-10,
+.pulley-cls-13,
+.pulley-cls-15,
+.pulley-cls-4,
+.pulley-cls-7 {
+  stroke-miterlimit: 15.12;
+}
+.pulley-cls-14,
+.pulley-cls-15,
+.pulley-cls-19,
+.pulley-cls-7,
+.pulley-cls-9 {
+  stroke: #000;
+}
+.pulley-cls-14,
+.pulley-cls-20,
+.pulley-cls-21,
+.pulley-cls-7,
+.pulley-cls-9 {
+  opacity: 0.82;
+  isolation: isolate;
+}
+.pulley-cls-11,
+.pulley-cls-8 {
+  stroke-width: 7.66px;
+}
+.pulley-cls-12,
+.pulley-cls-21,
+.pulley-cls-9 {
+  stroke-linejoin: round;
+}
+.pulley-cls-14,
+.pulley-cls-20 {
+  stroke-miterlimit: 5.33;
+}
+.pulley-cls-16,
+.pulley-cls-18 {
+  fill: #b6b6b6;
+  stroke: #b6b6b6;
+}
+.pulley-cls-16 {
+  stroke-width: 1.08px;
+}
+.pulley-cls-17 {
+  stroke-width: 7.3px;
+}
+.pulley-cls-18 {
+  stroke-width: 0.54px;
+}
+.pulley-cls-19 {
+  stroke-miterlimit: 7.56;
+}
+.pulley-cls-41 {
+  fill: red;
+  opacity: 0;
+}
+.pulley-decorated-text {
+  font-family: Arial Black;
+  fill: #fb6300
+}
+#sss-arc-top_pulley_1, #sss-arc-bottom_pulley_1 {
+  fill: none;
+}
+    </style>
+  </defs>
+  <path
+    class="sss-white-outline pulley-cls-1"
+    d="M281.4,41.39A141.32,141.32,0,0,0,40.16,141.31v77.36A141.31,141.31,0,0,0,281.4,318.59a140.33,140.33,0,0,0,41.4-99.92V141.31A140.29,140.29,0,0,0,281.4,41.39Zm31.06,177.28a131,131,0,1,1-261.95,0V141.31a131,131,0,0,1,262,0Z"
+  />
+  <path
+    class="sss-outer-border pulley-cls-2"
+    d="M274.53,48.7A131,131,0,0,0,50.94,141.31v77.36a131,131,0,1,0,262,0V141.31A130.51,130.51,0,0,0,274.53,48.7Zm21.51,170a114.13,114.13,0,1,1-228.25,0V141.31a114.13,114.13,0,0,1,228.25,0Z"
+  />
+  <path
+    class="sss-inner-border pulley-cls-1"
+    d="M181.92,27.19A114.25,114.25,0,0,0,67.79,141.31v77.37a114.13,114.13,0,0,0,228.25,0V141.31A114.24,114.24,0,0,0,181.92,27.19Zm69.42,191.49a69.42,69.42,0,0,1-138.84,0V141.31a69.42,69.42,0,0,1,138.84,0Z"
+  />
+  <path
+    class="sss-background-color pulley-cls-2"
+    d="M251.34,140.56v78.87c0,37.86-31.15,68.65-69.42,68.65s-69.42-30.79-69.42-68.65V140.56c0-37.86,31.14-68.66,69.42-68.66S251.34,102.7,251.34,140.56Z"
+  />
+  <g class="sss-main-image">
+    <g id="g2493">
+      <circle id="circle2292" class="pulley-cls-3" cx="183.12" cy="155.46" r="5.86" />
+      <path id="path1513" class="pulley-cls-4" d="M130.78,109.7H232.55" />
+      <circle id="circle1262" class="pulley-cls-5" cx="183.12" cy="155.46" r="5.86" />
+      <g id="g1641">
+        <path id="path1515" class="pulley-cls-6" d="M131.27,108.38l2.55-1.59" />
+        <path id="path1518" class="pulley-cls-6" d="M134.44,108.38l2.56-1.59" />
+        <path id="path1523" class="pulley-cls-6" d="M137.62,108.38l2.56-1.59" />
+        <path id="path1525" class="pulley-cls-6" d="M140.8,108.38l2.56-1.59" />
+        <path id="path1531" class="pulley-cls-6" d="M144,108.38l2.56-1.59" />
+        <path id="path1533" class="pulley-cls-6" d="M147.15,108.38l2.56-1.59" />
+        <path id="path1537" class="pulley-cls-6" d="M150.33,108.38l2.56-1.59" />
+        <path id="path1539" class="pulley-cls-6" d="M153.51,108.38l2.55-1.59" />
+        <path id="path1547" class="pulley-cls-6" d="M156.68,108.38l2.56-1.59" />
+        <path id="path1549" class="pulley-cls-6" d="M159.86,108.38l2.56-1.59" />
+        <path id="path1553" class="pulley-cls-6" d="M163,108.38l2.56-1.59" />
+        <path id="path1555" class="pulley-cls-6" d="M166.21,108.38l2.56-1.59" />
+        <path id="path1561" class="pulley-cls-6" d="M169.39,108.38l2.56-1.59" />
+        <path id="path1563" class="pulley-cls-6" d="M172.57,108.38l2.56-1.59" />
+        <path id="path1567" class="pulley-cls-6" d="M175.75,108.38l2.55-1.59" />
+        <path id="path1569" class="pulley-cls-6" d="M178.92,108.38l2.56-1.59" />
+        <path id="path1579" class="pulley-cls-6" d="M181.86,108.38l2.55-1.59" />
+        <path id="path1581" class="pulley-cls-6" d="M185,108.38l2.56-1.59" />
+        <path id="path1585" class="pulley-cls-6" d="M188.21,108.38l2.56-1.59" />
+        <path id="path1587" class="pulley-cls-6" d="M191.39,108.38l2.56-1.59" />
+        <path id="path1593" class="pulley-cls-6" d="M194.56,108.38l2.56-1.59" />
+        <path id="path1595" class="pulley-cls-6" d="M197.74,108.38l2.56-1.59" />
+        <path id="path1599" class="pulley-cls-6" d="M200.92,108.38l2.56-1.59" />
+        <path id="path1601" class="pulley-cls-6" d="M204.1,108.38l2.55-1.59" />
+        <path id="path1609" class="pulley-cls-6" d="M207.27,108.38l2.56-1.59" />
+        <path id="path1611" class="pulley-cls-6" d="M210.45,108.38l2.56-1.59" />
+        <path id="path1615" class="pulley-cls-6" d="M213.63,108.38l2.56-1.59" />
+        <path id="path1617" class="pulley-cls-6" d="M216.8,108.38l2.56-1.59" />
+        <path id="path1623" class="pulley-cls-6" d="M220,108.38l2.56-1.59" />
+        <path id="path1625" class="pulley-cls-6" d="M223.16,108.38l2.56-1.59" />
+        <path id="path1629" class="pulley-cls-6" d="M226.34,108.38l2.55-1.59" />
+        <path id="path1631" class="pulley-cls-6" d="M229.51,108.38l2.56-1.59" />
+      </g>
+      <path
+        id="path1647"
+        class="pulley-cls-7"
+        d="M169,130.23A14.15,14.15,0,0,1,196.89,127l-13.77,3.28Z"
+      />
+      <circle id="circle2517" class="pulley-cls-8" cx="183.12" cy="130.23" r="12.64" />
+      <path
+        id="path2195"
+        class="pulley-cls-7"
+        d="M169,130.23A14.12,14.12,0,0,1,196.83,127l-13.74,3.28Z"
+      />
+      <path
+        id="path2287"
+        class="pulley-cls-9"
+        d="M176.2,186.4A6.92,6.92,0,1,0,189,182.87"
+      />
+      <circle id="circle1271" class="pulley-cls-5" cx="183.12" cy="186.46" r="5.86" />
+      <g id="g2346">
+        <rect
+          id="rect1864"
+          class="pulley-cls-4"
+          x="182.72"
+          y="238.6"
+          width="0.47"
+          height="11.21"
+        />
+        <rect
+          id="rect2088"
+          class="pulley-cls-10"
+          x="168.53"
+          y="250.72"
+          width="28.86"
+          height="23.3"
+        />
+      </g>
+      <circle
+        id="circle2546"
+        class="pulley-cls-11"
+        cx="183.12"
+        cy="130.23"
+        r="12.64"
+      />
+      <g id="g1287">
+        <rect
+          id="rect1277"
+          class="pulley-cls-12"
+          x="182.02"
+          y="109.9"
+          width="2.81"
+          height="53.75"
+        />
+        <path
+          id="path1283"
+          class="pulley-cls-13"
+          d="M183,167.85c-.11-1.79,0-2.58,0-4.41h.78c0,1.43.09,2.91.05,4.4a.34.34,0,0,0,.14.22,2.86,2.86,0,0,1,1.08,1.87,2.31,2.31,0,0,1-.75,1.61,2,2,0,0,1-1.92.25,2.26,2.26,0,0,1-1-.91,3.89,3.89,0,0,1-.39-1.47c0-.1.05-.28.08-.29a1.21,1.21,0,0,1,.57,0,4.25,4.25,0,0,0,.32,1.33,1.84,1.84,0,0,0,.75.67,1.13,1.13,0,0,0,1.11-.18c.17-.17.34-.23.45-1a1.34,1.34,0,0,1,0-.2,1.68,1.68,0,0,0-.3-.85c-.33-.34-.95-.51-.95-1.05Z"
+        />
+      </g>
+      <g id="g1283">
+        <path
+          id="path1279"
+          class="pulley-cls-14"
+          d="M169,211.41a14.15,14.15,0,1,0,28.24-1.28"
+        />
+        <path id="path1369" class="pulley-cls-15" d="M169,211.68V130.59" />
+      </g>
+      <path
+        class="pulley-cls-16"
+        d="M183.13,210.67a1,1,0,1,1-1,1A1,1,0,0,1,183.13,210.67Z"
+      />
+      <g id="g2265">
+        <g id="g2259">
+          <circle
+            id="circle2257"
+            class="pulley-cls-16"
+            cx="183.46"
+            cy="109.9"
+            r="1.04"
+          />
+        </g>
+        <path id="path2261" class="pulley-cls-15" d="M182.85,109.29l1.22,1.22" />
+        <path id="path2263" class="pulley-cls-15" d="M184.07,109.29l-1.22,1.22" />
+      </g>
+      <circle
+        id="circle1277"
+        class="pulley-cls-17"
+        cx="183.13"
+        cy="211.54"
+        r="12.68"
+      />
+      <rect
+        id="rect1305"
+        class="pulley-cls-12"
+        x="181.77"
+        y="185.81"
+        width="2.9"
+        height="44.96"
+      />
+      <path
+        id="path1283-2"
+        data-name="path1283"
+        class="pulley-cls-13"
+        d="M183,235.08a32,32,0,0,1,0-3.25h.77c0,1.06.09,2.15.06,3.25a.21.21,0,0,0,.13.16,2.11,2.11,0,0,1,1.08,1.38,1.53,1.53,0,0,1-.75,1.19,2.54,2.54,0,0,1-1.91.19,2.15,2.15,0,0,1-1-.68,2.23,2.23,0,0,1-.39-1.08c0-.07,0-.21.08-.21a1.54,1.54,0,0,1,.57,0,2.51,2.51,0,0,0,.32,1,1.66,1.66,0,0,0,.75.49,1.43,1.43,0,0,0,1.11-.13c.17-.13.34-.17.45-.75,0,0,0-.1,0-.14-.08-.27-.09-.47-.3-.63s-1-.38-1-.78Z"
+      />
+      <g id="g2285">
+        <g id="g2279">
+          <circle
+            id="circle2277"
+            class="pulley-cls-18"
+            cx="183.18"
+            cy="171.58"
+            r="0.52"
+          />
+        </g>
+        <path id="path2281" class="pulley-cls-19" d="M182.87,171.28l.61.61" />
+        <path id="path2283" class="pulley-cls-19" d="M183.48,171.28l-.61.61" />
+      </g>
+      <g id="g2327">
+        <path
+          id="path2323"
+          class="pulley-cls-20"
+          d="M169,211.41a14.15,14.15,0,1,0,28.24-1.28"
+        />
+        <path id="path2325" class="pulley-cls-4" d="M169,211.68V130.59" />
+      </g>
+      <path id="path1357" class="pulley-cls-4" d="M197.21,210.32l-7.27-54.43" />
+      <path
+        id="path1273"
+        class="pulley-cls-21"
+        d="M176.22,186A6.92,6.92,0,1,0,189,182.87"
+      />
+      <path id="path1367" class="pulley-cls-4" d="M176.2,186.4V155.51" />
+      <path id="path1355" class="pulley-cls-4" d="M189.16,183.08l-6.31-11.89" />
+    </g>
+  </g>
+  <path
+    id="sss-arc-top_pulley_1"
+    class="pulley-cls-22"
+    d="M104.67,141.8s-2.55-30.27,23.09-55.5S182.2,64,182.2,64,211.91,62.05,236,85.69s23.72,55.69,23.72,55.69"
+  />
+  <path
+    id="sss-arc-bottom_pulley_1"
+    class="pulley-cls-22"
+    d="M83.23,229.34S80,267.8,112.61,299.86s69.27,28.37,69.27,28.37,37.8,2.45,68.48-27.59,30.18-70.76,30.18-70.76"
+  />
+  <text
+    x="124"
+    font-size="34"
+    class="pulley-decorated-text"
+    text-anchor="middle"
+  >
+    <textPath href="#sss-arc-top_pulley_1" class="upper-side-text">
+      {sssText0}
+    </textPath>
+  </text>
+  <text
+    x="158"
+    font-size="34"
+    class="pulley-decorated-text"
+    text-anchor="middle"
+    style="letter-spacing: .17em;"
+  >
+    <textPath href="#sss-arc-bottom_pulley_1" class="upper-side-text">
+      {sssText1}
+    </textPath>
+  </text>
+  <path
+    id=""
+    class="pulley-cls-41 sss-clear-coat"
+    d="M281.84,41.4A141.32,141.32,0,0,0,40.6,141.32v77.36A141.31,141.31,0,0,0,281.84,318.6a140.33,140.33,0,0,0,41.4-99.92V141.32A140.29,140.29,0,0,0,281.84,41.4Z"
+  />
+</svg>
