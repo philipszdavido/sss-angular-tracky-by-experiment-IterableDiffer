@@ -54,7 +54,7 @@ export class SSSTabService {
                pointer.pagination[ idx ].serial + "_" +
                pointer.instance;
 	}
-	
+
 	deriveSerialFromTabId(tabid: string): string {
 
         return tabid.split("_").at(-2);
@@ -261,7 +261,7 @@ export class SSSTabService {
     generateDayElements( newPointer: Pointer ): Tab {
 
 		const 	new_tabid 			= this.deriveTabidFromPointer( newPointer, 0 );
-		
+
         const { vacantnodeobj,
 				stubnodeobj,
 				calendartabobj } 	= this.assembleNewCalendarTabObject( new_tabid );
@@ -318,7 +318,7 @@ export class SSSTabService {
 	}
 
 	assembleNewCalendarTabObject( tabid: string ): { vacantnodeobj: Node, stubnodeobj: Node, calendartabobj: Tab } {
-		
+
 		const username 			= this.sssAccountService.getUser()._id;
         const vacantNodeId 		= (username === "mysyllabi" ? "HHHHHHHH-" : username + "_HHHHHHHH-") + Date.now();
 		const stubNodeId 		= (username === "mysyllabi" ? "GGGGGGGG-" : username + "_GGGGGGGG-") + Date.now();
@@ -349,9 +349,13 @@ export class SSSTabService {
 
 	removeTab( tabs: { [key: string]: Tab[] }, outgoingId: string ) : { [key: string]: Tab[] } {
 
-		return tabs[ outgoingId ].length > 1 
-			? { ...tabs, [ outgoingId ]: tabs[ outgoingId ].slice(0, 1) } 
-			: _.omit( tabs, outgoingId );
+		const _tabs =  tabs[ outgoingId ].length > 1
+			? { ...tabs, [ outgoingId ]: tabs[ outgoingId ].slice(0, 1) }
+			: Object.fromEntries(
+				Object.entries(tabs).filter(([key]) => key !== outgoingId)
+			);
+
+		return _tabs
 	}
 
 	findPointerIndex(tabobj: Tab, pointer: Pointer): number {
@@ -380,19 +384,19 @@ export class SSSTabService {
 		const mutated = merge.all([ tabs[ id ][0] ]) as Tab;
 
 		const idx = this.findPointerIndex( mutated, pointer );
-		
+
 		if( idx != -1 ) { /*** CANDIDATE FOR PERFORMANCE OPTMIZATION ***/
 			mutated.inventory[ idx ] = { ...mutated.inventory[ idx ], _id: this.sssNodeService.comandeerId( pointer._id ) };
 		}
-		 
+
 		switch (true) {
 			case _.isEqual(mutated, tabs[id][0]): return tabs;
-			case comandeer: 
+			case comandeer:
 			return this.replaceTab(tabs, { oldTabId: id, newTabObj: { ...mutated, _id: this.comandeerId( id ) } });
-			default: 
+			default:
 			return { ...tabs, [ id ]: [ mutated ] };
-		}	
-		
+		}
+
 	}
 
 	updatePointer(tabs: { [key: string]: Tab[] }, { ancestry, changes}): { [key: string]: Tab[] } {
@@ -429,9 +433,9 @@ export class SSSTabService {
 		return Object.keys(incoming).reduce((updatedTabs, tabid) => {
 			updatedTabs[tabid] = updatedTabs[tabid]
 					? [ ...incoming[tabid], ...updatedTabs[tabid] ]
-					: incoming[tabid]; 
+					: incoming[tabid];
 			return updatedTabs;
-		}, { ...tabs }); 
+		}, { ...tabs });
 	}
 
 	loadTab( tabs: { [key: string]: Tab[] }, id: string, tab: Tab, origin: string ) : { [key: string]: Tab[] } {
@@ -442,7 +446,7 @@ export class SSSTabService {
 	reloadTab( tabs: { [key: string]: Tab[] }, tabId: string, origin: string ) : { [key: string]: Tab[] } {
 
 		tabId = tabs[ tabId ] ? tabId : this.comandeerId(tabId)
-		
+
 		return tabs[ tabId ] ? { ...tabs, [ tabId ] : _.cloneDeep( tabs[ tabId ] ) } : tabs;
 	}
 }
