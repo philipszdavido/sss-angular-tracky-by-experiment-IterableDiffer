@@ -24,12 +24,12 @@ import { SSSSisterService } from "src/app/services/sss-sister.service";
 	styleUrls: [],
 })
 export abstract class SSSBranchComponent extends SSSStateComponent {
-	
+
 	tab 								: Tab;
 	isLiveWS 							: boolean;
 	storeSubscription 					: Subscription;
 	revision 							: number;
-	
+
 	protected sssAccountService  		= inject(SSSAccountService);
 	protected platformId  				= inject(PLATFORM_ID);
 	protected sssTabService 			= inject(SSSTabService);
@@ -41,7 +41,7 @@ export abstract class SSSBranchComponent extends SSSStateComponent {
 	protected store 					= inject(Store<AppState>);
 	private sssListenerService 			= inject(SSSListenerService);
 	private sssSisterService 			= inject(SSSSisterService);
-	
+
 	initialize(tab: Tab): void {
 
 		// this.isLiveWS = this.sssAccountService.determineIfLoggedIn(); // replace in future with data from node or ancestry
@@ -49,7 +49,7 @@ export abstract class SSSBranchComponent extends SSSStateComponent {
 		this.tab = _.cloneDeep(tab);
 
 		this.revision = tab.revision;
-		
+
 		this.sssDragDropService.registerDroppable(this.tab._id, this.template, true);
 
 		// this.ancestry.pointer._id != this.node._id ? this.sssAncestryService.traverseDay(this.tab._id, this.ancestry) : this.register(tab);
@@ -59,7 +59,7 @@ export abstract class SSSBranchComponent extends SSSStateComponent {
 	}
 
 	register(tab: Tab): void {
-		
+
 		if (!isPlatformBrowser(this.platformId)) { return; }
 
 		// this.isLiveWS && this.sssWsService.subscribeToSocket(this.ancestry.pointer, this.pagIdx);
@@ -84,7 +84,7 @@ export abstract class SSSBranchComponent extends SSSStateComponent {
 		this.sssLocalService.removeObjByKey(_id);
 
 		// this.isLiveWS && this.sssWsService.unSubscribeToSocket(this.ancestry.pointer, this.pagIdx);
-		
+
 		this.sssSisterService.removeFromList(_id);
 
 		this.sssListenerService.unregister(this.ancestry);
@@ -93,29 +93,35 @@ export abstract class SSSBranchComponent extends SSSStateComponent {
 	comandeer(tab: Tab, shouldBubble = true) {
 
 		console.log("$$$$$$ pcomandeer $$$$$", tab._id, tab);
-		
+
 		const oldTabid = this.storeSubscription.id;
-		
+		this.unregister(oldTabid);
+
 		this.tab = _.cloneDeep(tab);
 
 		this.sssLocalService.replacementByKey(oldTabid, tab._id, tab);
 
 		if(shouldBubble) {
-		// if(this.ancestry.pointer.currenttab != "timeline"){
+			// if(this.ancestry.pointer.currenttab != "timeline"){
 			this.store.dispatch(PushActions({ payload: this.bubbleUp(this.ancestry) }));
-		// }
+			// }
 		}
 
 		this.sssDragDropService.registerDroppable(this.tab._id, this.template, true);
 
 		this.ancestry = this.sssAncestryService.comandeerAncestry(this.ancestry);
 
+		this.storeSubscription.id = tab._id;
+
+		this.storeSubscription.ancestry = this.sssAncestryService.comandeerAncestry(this.ancestry);
+
 		this.sssSelectorService.comandeerTab(this.storeSubscription, tab._id, this.ancestry);
 
 		this.sssListenerService.comandeer( this.ancestry );
 
-		this.unregister(oldTabid);
+		// this.unregister(oldTabid);
 	}
+
 
 	handleBubble(child: Ancestry): Action[] {
 
